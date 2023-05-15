@@ -67,4 +67,7 @@ packer.startup(function(use)
 
     -- auto indent
     use 'nmac427/guess-indent.nvim'
+
+    -- notifications
+    use 'rcarriga/nvim-notify'
 end)

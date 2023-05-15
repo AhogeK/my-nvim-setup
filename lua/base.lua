@@ -18,3 +18,5 @@ vim.o.autoindent = true
 vim.o.smartindent = true
 
 vim.opt.wrap = false
+
+vim.opt.termguicolors = true
