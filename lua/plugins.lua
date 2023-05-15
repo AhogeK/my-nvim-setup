@@ -70,4 +70,7 @@ packer.startup(function(use)
 
     -- notifications
     use 'rcarriga/nvim-notify'
+
+    -- git decorations
+    use 'lewis6991/gitsigns.nvim'
 end)

@@ -8,7 +8,7 @@ telescope.setup {
     defaults = {
         hidden = true,
         file_ignore_patterns = {
-            "node_modules", ".git", ".DS_Store", ".idea", ".vscode"
+            "^node_modules/", "^.git/", ".DS_Store", "^.idea/", "^.vscode/"
         },
         mappings = {i = {["<C-b>"] = "select_tab"}}
     },
