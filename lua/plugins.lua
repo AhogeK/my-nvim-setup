@@ -69,7 +69,7 @@ packer.startup(function(use)
     use 'nmac427/guess-indent.nvim'
 
     -- notifications
-    use 'rcarriga/nvim-notify'
+    -- use 'rcarriga/nvim-notify'
 
     -- git decorations
     use 'lewis6991/gitsigns.nvim'

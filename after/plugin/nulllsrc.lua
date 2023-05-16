@@ -6,11 +6,6 @@ end
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
-local astro_source = {
-    sources = {null_ls.builtins.formatting.prettierd},
-    filetypes = {"astro"}
-}
-
 null_ls.setup {
     on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
@@ -31,4 +26,16 @@ null_ls.setup {
     }
 }
 
+local astro_source = {
+    sources = {null_ls.builtins.formatting.prettierd},
+    filetypes = {"astro"}
+}
+
 null_ls.register(astro_source)
+
+local markdown_source = {
+    sources = {null_ls.builtins.formatting.prettierd},
+    filetypes = {"markdown"}
+}
+
+null_ls.register(markdown_source)
