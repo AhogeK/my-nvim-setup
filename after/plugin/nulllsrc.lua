@@ -37,5 +37,15 @@ local markdown_source = {
     sources = {null_ls.builtins.formatting.prettierd},
     filetypes = {"markdown"}
 }
-
 null_ls.register(markdown_source)
+
+local tsx_source = {
+    sources = {
+        null_ls.builtins.code_actions.eslint_d,
+        null_ls.builtins.formatting.prettierd,
+        null_ls.builtins.diagnostics.eslint_d
+    },
+    filetypes = {"typescriptreact", "javascriptreact"}
+}
+
+null_ls.register(tsx_source)

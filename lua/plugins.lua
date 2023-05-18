@@ -73,4 +73,13 @@ packer.startup(function(use)
 
     -- git decorations
     use 'lewis6991/gitsigns.nvim'
+
+    -- surround
+    use 'kylechui/nvim-surround'
+
+    -- autotag
+    use 'windwp/nvim-ts-autotag'
+
+    -- autopairs
+    use 'windwp/nvim-autopairs'
 end)
