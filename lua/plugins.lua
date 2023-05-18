@@ -38,6 +38,9 @@ packer.startup(function(use)
     -- inject lsp diagnostics, code actions, formate etc
     use 'jose-elias-alvarez/null-ls.nvim'
 
+    -- lspsaga
+    use 'glepnir/lspsaga.nvim'
+
     -- Portable package manager for neovim
     use {
         'williamboman/mason.nvim',
@@ -60,10 +63,10 @@ packer.startup(function(use)
     use {
         'hrsh7th/nvim-cmp', 'hrsh7th/cmp-nvim-lsp', 'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline', -- vsnip
-        'hrsh7th/cmp-vsnip', 'hrsh7th/vim-vsnip'
+        'hrsh7th/cmp-vsnip', 'hrsh7th/vim-vsnip', 'hrsh7th/cmp-emoji'
     }
 
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     -- auto indent
     use 'nmac427/guess-indent.nvim'
