@@ -45,7 +45,9 @@ local tsx_source = {
         null_ls.builtins.formatting.prettierd,
         null_ls.builtins.diagnostics.eslint_d
     },
-    filetypes = {"typescriptreact", "javascriptreact"}
+    filetypes = {
+        "typescriptreact", "javascriptreact", "typescript", "javascript"
+    }
 }
 
 null_ls.register(tsx_source)
