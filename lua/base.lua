@@ -24,3 +24,12 @@ vim.o.sidescrolloff = 10
 vim.o.sidescroll = 1
 
 vim.opt.termguicolors = true
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.cmd [[
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * NvimTreeClose
+augroup end
+]]
