@@ -16,7 +16,11 @@ vim.g.loaded_perl_provider = 0
 vim.o.expandtab = true
 vim.o.autoindent = true
 vim.o.smartindent = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
 
-vim.opt.wrap = false
+vim.o.wrap = false
+vim.o.sidescrolloff = 10
+vim.o.sidescroll = 1
 
 vim.opt.termguicolors = true
