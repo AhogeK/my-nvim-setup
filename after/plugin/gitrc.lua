@@ -1,6 +1,8 @@
 local status, gitsigns = pcall(require, "gitsigns")
 if (not status) then return end
 
+local git_status, git = pcall(require, "git")
+
 gitsigns.setup {
     signs = {
         add = {text = '│'},
@@ -80,3 +82,5 @@ gitsigns.setup {
         map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
     end
 }
+
+git.setup {}
