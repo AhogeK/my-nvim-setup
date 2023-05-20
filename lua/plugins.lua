@@ -14,7 +14,8 @@ packer.startup(function(use)
     use "wbthomason/packer.nvim"
 
     -- theme
-    use "ellisonleao/gruvbox.nvim"
+    -- 使用 neosolarized.nvim 主题
+    use {'svrana/neosolarized.nvim', requires = {'tjdevries/colorbuddy.nvim'}}
 
     use "nvim-tree/nvim-web-devicons"
     -- lualine theme
@@ -88,4 +89,7 @@ packer.startup(function(use)
 
     use "norcalli/nvim-colorizer.lua"
     use "roobert/tailwindcss-colorizer-cmp.nvim"
+
+    use {"https://gitlab.com/schrieveslaach/sonarlint.nvim", as = "sonarlint"}
+    use "mfussenegger/nvim-jdtls"
 end)

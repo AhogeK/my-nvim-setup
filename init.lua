@@ -2,9 +2,11 @@ require('base')
 require('plugins')
 require('maps')
 
--- set gruvbox theme
 vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
+
+-- Undercurl
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- set file tab spaces
 vim.cmd [[

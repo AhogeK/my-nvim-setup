@@ -84,6 +84,11 @@ lspconfig.eslint.setup({capabilities = capabilities})
 
 lspconfig.emmet_ls.setup({capabilities = capabilities})
 
+local startup_dir = vim.loop.cwd()
+lspconfig.jdtls.setup({capabilities = capabilities})
+
+lspconfig.java_language_server.setup({capabilities = capabilities})
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
