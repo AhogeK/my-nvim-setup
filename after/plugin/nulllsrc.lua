@@ -27,7 +27,11 @@ null_ls.setup({
 })
 
 local astro_source = {
-	sources = { null_ls.builtins.formatting.prettier },
+	sources = {
+		null_ls.builtins.code_actions.eslint_d,
+		null_ls.builtins.formatting.prettier,
+		null_ls.builtins.diagnostics.eslint_d,
+	},
 	filetypes = { "astro" },
 }
 
